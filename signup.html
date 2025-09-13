@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - MentorConnect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">MentorConnect</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="student.html">Student</a></li>
+      <li><a href="mentor.html">Mentor</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <section class="profile-section">
+    <div class="profile-card">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <input type="text" id="suName" placeholder="Full Name" class="input" required>
+        <input type="email" id="suEmail" placeholder="Email" class="input" required>
+        <input type="password" id="suPass" placeholder="Password" class="input" required>
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+      <p class="small">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+  </section>
+
+  <script>
+    const signupForm = document.getElementById('signupForm');
+    signupForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Demo Sign Up: You clicked Sign Up.');
+      window.location.href = 'directory.html';
+    });
+  </script>
+
+</body>
+</html>
