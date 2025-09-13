@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - MentorConnect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">MentorConnect</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="student.html">Student</a></li>
+      <li><a href="mentor.html">Mentor</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <section class="profile-section">
+    <div class="profile-card">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" id="liEmail" placeholder="Email" class="input" required>
+        <input type="password" id="liPass" placeholder="Password" class="input" required>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <p class="small">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+  </section>
+
+  <script>
+    const loginForm = document.getElementById('loginForm');
+    loginForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Demo Login: You clicked Login.');
+      window.location.href = 'directory.html';
+    });
+  </script>
+
+</body>
+</html>
